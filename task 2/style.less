@@ -1,0 +1,73 @@
+// out: style.css, compress: false, sourceMap: false
+img{
+    max-width: 100%;
+}
+
+#root{
+    width: 630px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    #site-header{
+        
+      font-size: 35px;
+      float: right;
+      padding-bottom: 30px;
+      padding-left: 80px;
+      padding-right: 30px;
+      color: #923D38;
+      text-shadow: 2px 1px 5px #923D38;
+      background: white url(./imgs/logo.png)  no-repeat;
+      background-size: 65px;
+    }
+    .superheroes{
+        margin: 0;
+        padding: 0;
+       float: left;
+        
+       li{
+           position: relative;
+           width: 225px;
+           opacity: 0.5;
+           &:hover{
+               opacity: 1;
+               .description{
+                   display: block;
+               }
+               
+           }
+           
+           .hero-header{
+               opacity: 0.8;
+               position: absolute;
+               text-align: center;
+               vertical-align: middle;
+               width: 100%;
+               background: black;
+               color: #923D38;
+               height: 30px;
+               padding-top: 15px;
+               padding-bottom: 5px;
+               z-index: 999;
+
+           }
+           
+           .description{
+             position: absolute;
+             width: 400px;
+             margin-left: 230px;
+             margin-top: -150px;
+             display: none;
+             text-align: justify;
+             font-size: 1.2em;
+           }
+       }
+    }
+}
+
+.superheroes li:hover .description{
+    display: block;
+}
+
+
+
+
